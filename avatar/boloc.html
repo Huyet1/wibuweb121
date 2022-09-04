@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- viewport-->
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/3W.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaIpad.css">
+    <link rel="stylesheet" type="text/css" href="../css/Admin.css">
+    <link rel="stylesheet" href="../login system with avatar/sanpham/fontawesome-free-6.1.2-web/css/all.min.css">
+        <link rel="stylesheet" href="../sanpham/fontawesome-free-6.1.2-web/css/all.min.css"> <!-- link font icon-->
+        <link href="./light-dark.css" rel="stylesheet">  <!-- link css button light/dark-->
+        <!-- HTML Conditional comment, chỉ những trình IE nhỏ hơn 10 sẽ áp dụng polyfill-->
+        <!--[if lt lt IE 10]>   
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" integrity="sha512-BWbLJlfp8hzXlxT6K5KLdxPVAj+4Zn2e4FVq5P7NSFH/mkAJ18UiZRQUD4anR3jyp0/WYkeZ0Zmq5EWWrDxneQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <![endif]-->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <!-- Polyfill-->
+        <div class="menu2">
+            <ul id="list--style">
+                <li> <div class="symbol_comic">
+                    <a href="../index.html" class="symbol-group"  style="text-decoration: none; color: white;">
+                    <i class="fa-solid fa-cat"></i>
+                    <b style="color: orange; font-size:15px;background-color: white; border-top-right-radius: 20%;">Wibu</b>
+                <br><b style="font-size:20px; background-color: orange; border-radius: 20% 20% 0 0;  "> WORLD </b></a></div>
+            </li>
+                    
+                
+                <li> 
+                    <div class="main">
+                        <div class="nav">
+                            <!-- Menu_ pC ẩn-->
+                            <nav class="nav__pc">
+                                
+                            </nav>
+                            <!---------------->
+                            <!-- Menu_ mobile--icon-->
+                            <label for="nav_moblie-input" class="nav__icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></label>
+                            <input type="checkbox" hidden id="nav_moblie-input" class="nav__input" name="">
+                            <label for="nav_moblie-input" class="nav__layout"></label>
+                            <nav class="nav__ipad">
+                                <ul class="nav__list">
+                                    <li> <a href="" class="nav__ipad--link" > Trang chủ </a> </li> 
+                                    <li> <a href="" class="nav__ipad--link" > Thể loại </a> </li> 
+                                    <li> <div class="box1">
+                                        <form action ="../sanpham/timkiem.php" method ="get" class="sbox">
+                                        <button class="search_button" type="submit"><i class="fa fa-search" name="search_text"></i></button>
+                                        <input type="text" placeholder="Tìm kiếm..." name="search_text" class="search_text">
+                                        </form>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="button--all">
+                                            <button class="button1 button--lr" style="background-color: orange;"><a href="../login system with avatar/login.php">Đăng nhập </a></button>
+                                            <button class="button1 button--lr"><a href="../login system with avatar/register.php"> Đăng ký</a></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    </li>
+                <li>    
+                    <div class="box">
+                        <form action ="../sanpham/timkiem.php" method ="get" class="sbox">
+                        <button class="search_button" type="submit"><i class="fa fa-search" name="search_text"></i></button>
+                        <input type="text" placeholder="Tìm kiếm..." name="search_text" class="search_text">
+                        </form>
+                    </div>
+                </li>
+                <li> 
+                    <div id="button--all">
+                        <button class="button button--lr" style="background-color: orange;"><a href="../login system with avatar/login.php">Đăng nhập </a></button>
+                        <button class="button button--lr"><a href="../login system with avatar/register.php"> Đăng ký</a></button>
+                    </div>
+                </li>
+                
+                <li> <!-- button light dark-->
+                    <div id="wrapper">
+                    <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+                    </div>
+                    <script type="text/javascript" src="./light-dark.js"></script>
+                </li> 
+            </ul>
+        </div>
+        <!--Menu cấp 2--> 
+    <div id="narbar">
+        <ul>
+            <li> <a href="../index.html">Trang chủ </a> </li>
+            <li> <a href="../avatar/boloc.html"> Thể loại </a></li>
+            <li> <a href="#"> Lịch sử </a> </li>
+            <li> <a href="#"> Thảo luận </a> </li>
+        </ul>
+    </div>
+    </head>
+<body>
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./boloc.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Manhua')">
+          Manhua
+        </button>
+        <button class="button-value" onclick="filterProduct('Manga')">
+          Manga
+        </button>
+        <button class="button-value" onclick="filterProduct('Manwa')">
+          Manwa
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="boloc.js"></script>
+  </body>
+  <footer>
+    <div class="footer__father">
+        <div class="footer__heading">
+            <p> Group Name: </p>
+            <br><a href="index.html" class="symbol-group"  style="text-decoration: none; color: white;">
+            <i class="fa-solid fa-cat"></i>
+            <b style="color: orange; font-size: 1.5rem;background-color: white; border-top-right-radius: 20%;">Wibu</b>
+        <br><b style="font-size: 1.5rem; background-color: orange; border-radius: 20% 20% 0 0;  "> WORLD </b></a>
+        </div>
+        <div class="footer__member">
+            <p> Member's Group:</p>
+            <ul>
+                <li>Cao Đăng Khoa </li>
+                <li> Lê Thanh Lâm </li>
+                <li> Nguyễn Duy Tân </li>
+                <li> Trần Xuân Tiến </li>
+            </ul>
+        </div>
+    
+        <div class="footer__position">
+            <p> Position:</p>
+            <ul>
+                <li> Leader </li>
+                <li> Member </li>
+                <li> Member </li>
+                <li> Member </li>
+            </ul>
+        </div>
+        
+        <div class="footer__MSSV">
+            <p> Student-code:</p>
+            <ul>
+                <li> 2000001001 </li>
+                <li>  2000003434 </li>
+                <li> 2000003418 </li>
+                <li> 2000003678 </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+</html>
